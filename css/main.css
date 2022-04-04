@@ -1,0 +1,13 @@
+/* Comienza el header */
+#header {
+  background: #f7f2ed;
+  animation-name: example; }
+  #header li {
+    transition: all 1s;
+    transform: scale(1); }
+    #header li:hover {
+      color: aqua;
+      background-color: #23e4aa;
+      transform: scale(2); }
+    #header li.active {
+      color: blue; }

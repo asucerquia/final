@@ -1,0 +1,18 @@
+/* Comienza el header */
+
+#header {
+    background: #f7f2ed;
+    animation-name: example;
+    li {
+        transition: all 1s;
+        transform: scale(1);
+        &:hover {
+            color: $accent-color-1;
+            background-color: rgb(35, 228, 170);
+            transform: scale(2);
+        }
+        &.active {
+            color: blue;
+        }
+    }
+}
