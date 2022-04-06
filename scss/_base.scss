@@ -7,7 +7,7 @@
 }
 
 
-/* Comienza el header */
+/* estilos del header */
 
 #header {
     background: #f7f2ed;
@@ -37,6 +37,9 @@
     font-family: 'Staatliches';
     font-size: 20px;
 }
+
+
+/* estilos del rotados */
 
 #rotador {
     background: $accent-color-2;
@@ -107,6 +110,9 @@
     justify-content: center;
     align-items: center;
 }
+
+
+/* estilos del main */
 
 #main {
     background: $accent-color-1;
@@ -265,5 +271,15 @@ ul {
     .promo2 {
         background-size: 86%;
         background-position: -246px 0px;
+        h2 {
+            font-size: 50px;
+            color: $accent-color-5;
+            display: inline-block;
+        }
+        p {
+            font-size: 20px;
+            color: $accent-color-6;
+            display: inline-block;
+        }
     }
 }

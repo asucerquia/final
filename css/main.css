@@ -6,7 +6,7 @@
   transition: all 1s;
   font-family: 'Staatliches'; }
 
-/* Comienza el header */
+/* estilos del header */
 #header {
   background: #f7f2ed;
   animation-name: example; }
@@ -29,6 +29,7 @@
   font-family: 'Staatliches';
   font-size: 20px; }
 
+/* estilos del rotados */
 #rotador {
   background: #FD5521;
   padding-bottom: 100px;
@@ -85,6 +86,7 @@
   justify-content: center;
   align-items: center; }
 
+/* estilos del main */
 #main {
   background: #ffeebc;
   padding: 100px 0 10px 0; }
@@ -213,4 +215,12 @@ ul {
     color: blue; }
   .promo2 {
     background-size: 86%;
-    background-position: -246px 0px; } }
+    background-position: -246px 0px; }
+    .promo2 h2 {
+      font-size: 50px;
+      color: #eef0cb;
+      display: inline-block; }
+    .promo2 p {
+      font-size: 20px;
+      color: #fbdf83;
+      display: inline-block; } }
