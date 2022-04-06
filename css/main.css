@@ -3,7 +3,8 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  transition: all 1s; }
+  transition: all 1s;
+  font-family: 'Staatliches'; }
 
 /* Comienza el header */
 #header {
@@ -13,7 +14,7 @@
     transition: all 1s;
     transform: scale(1); }
     #header li:hover {
-      color: aqua;
+      color: #ffeebc;
       background-color: #23e4aa;
       transform: scale(2); }
     #header li.active {
@@ -29,7 +30,7 @@
   font-size: 20px; }
 
 #rotador {
-  background: #2D2D28;
+  background: #FD5521;
   padding-bottom: 100px;
   background-image: url("../img/textura2.png");
   overflow: hidden;
@@ -45,12 +46,12 @@
       text-shadow: 0px 0px 7px #fffefa; }
   #rotador .titulo {
     font-size: 6vw;
-    color: #fbdf83;
-    text-shadow: 0px 0px 7px #fbdf83;
+    color: #ffeebc;
+    text-shadow: 0px 0px 7px #ffeebc;
     font-family: 'Staatliches'; }
   #rotador .subtitulo {
     font-size: 2vw;
-    color: #fbdf83;
+    color: brown;
     text-shadow: 0px 0px 7px #fbdf83;
     font-family: 'Staatliches';
     margin-top: -30px; }
@@ -85,18 +86,19 @@
   align-items: center; }
 
 #main {
-  background: #2D2D28;
-  color: white;
-  padding-bottom: 100px; }
-  #main h2 {
-    font-family: 'Staatliches';
-    font-size: 80px;
-    color: #fdfef5;
+  background: #ffeebc;
+  padding: 100px 0 10px 0; }
+
+.msm-promo {
+  color: brown; }
+  .msm-promo h2 {
+    font-size: 140px;
     display: inline-block; }
-  #main p {
-    font-family: 'Staatliches';
+  .msm-promo h1 {
+    font-size: 140px;
+    display: inline-block; }
+  .msm-promo p {
     font-size: 25px;
-    color: #fbdf83;
     margin-bottom: 30px; }
 
 .cont-row {
@@ -107,6 +109,7 @@
   width: auto; }
   .cont-img img {
     object-fit: cover;
+    border-radius: 15px;
     animation: promoimg;
     animation-duration: 2s;
     animation-iteration-count: 1; }
@@ -119,15 +122,41 @@
     opacity: 1;
     transform: scale(1); } }
 
+.promo2 {
+  height: 400px;
+  background-color: #749802;
+  background-image: url(../img/ensaladas2.png);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  margin: 48px 0px; }
+  .promo2 .cont-texto {
+    display: flex;
+    align-items: center;
+    height: 400px; }
+
+.promo2__tex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .promo2__tex h2 {
+    font-size: 80px;
+    color: #eef0cb;
+    display: inline-block; }
+  .promo2__tex p {
+    font-size: 40px;
+    color: #fbdf83;
+    display: inline-block; }
+
 #footer {
-  background: #2D2D28;
-  color: #fbdf83;
+  background: #ffeebc;
+  color: brown;
   background-image: url("../img/textura2.png");
   display: flex;
   justify-content: center;
   font-family: 'Staatliches';
   list-style: none;
-  padding: 30px; }
+  padding: 30px;
+  font-size: 25px; }
 
 ul {
   list-style: none; }
@@ -149,18 +178,23 @@ ul {
       box-shadow: 3px -3px 20px 0px #ffc107;
       z-index: 100; }
 
+.boton {
+  width: 300px;
+  height: 44px;
+  background: brown;
+  font-size: 18px;
+  color: white;
+  font-family: 'Bebas Neue'; }
+
 @media screen and (max-width: 1300px) {
   #rotador .titulo {
-    font-size: 11vw;
-    color: #fbdf83;
-    text-shadow: 0px 0px 7px #fbdf83;
-    font-family: 'Staatliches'; }
+    font-size: 11vw; }
   #rotador .subtitulo {
     font-size: 6vw;
-    color: #fbdf83;
-    text-shadow: 0px 0px 7px #fbdf83;
-    font-family: 'Staatliches';
-    margin-top: -30px; } }
+    margin-top: -30px; }
+  .promo2 {
+    background-size: 86%;
+    background-position: -246px 0px; } }
 
 @media screen and (max-width: 460px) {
   #rotador .titulo {
@@ -175,4 +209,8 @@ ul {
     font-family: 'Staatliches';
     margin-top: -30px; }
   .menu img {
-    width: 200px; } }
+    width: 200px;
+    color: blue; }
+  .promo2 {
+    background-size: 86%;
+    background-position: -246px 0px; } }
